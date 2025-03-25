@@ -5,7 +5,6 @@ export default function Player() {
   const input = useRef();
   function handleClicked() {
     setName(input.current.value)
-    input.current.value = '';
   }
   return (
     <section id="player">
