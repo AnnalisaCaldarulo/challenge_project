@@ -17,7 +17,7 @@ function TimerChallenge({ title, targetTime }) {
 
         timer.current = setTimeout(() => {
             setTimerExpired(true);
-            dialog.current.showModal(); // standard browser feature
+            dialog.current.open(); //! ora fa riferimento al ref che abbiamo creato noi
         }, targetTime * 1000);
         //! Dopo i tot ms fa partire la callback (funzione di stato)
 
